@@ -1,0 +1,53 @@
+#!name=Script Basic by abu
+#!desc=日常使用本地脚本
+#!system=ios
+
+[Rule]
+# YouTubeAds
+URL-REGEX,^https:\/\/.+\.googlevideo\.com\/.+&oad,REJECT
+
+URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/_get_ads,REJECT
+URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
+URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
+URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
+URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
+URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
+
+[URL Rewrite]
+# Unlock TikTok
+^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? - reject
+
+(?<=_region=)CN(?=&) JP 307
+(?<=&app_version=)1[6-9]..(?=.?.?&) 100. 307
+(?<=\?version_code=)1[6-9]..(?=.?.?&) 100. 307
+
+# YouTubeAds
+ctier=[A-Z] citer=A 302
+
+[Script]
+
+# Remove News_Article's Ad (By Liquor030) 去除今日头条广告
+app_name=news_article&([\S]*)aid=\d+ app_name=news_article_social&$1aid=19 header
+
+http-response ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/91ShortVideo.js
+# 91.js = type=http-response,pattern="^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$",requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/JungegeCN/JGG/master/91.js,script-update-interval=0
+http-response https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
+小小影视.js = type=http-response,pattern=https:\/\/.*\..*\.com\/(ssp-svr\/ssp\/list3|ucp/index),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xxys.js,script-update-interval=0
+网易蜗牛读书.js = type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js,script-update-interval=0
+
+http-response https://api.dushu.io/Album/Info requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fdds.js,tag=樊登读书
+http-response http://getway.radio.cn/app* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/yt.js,tag=云听
+http-response https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
+http-response https://www.helloshiyu.com/sleep/user/profile requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/smzs.js
+http-request ^https:\/\/wapside.189.cn:9001\/api\/exchange\/consume script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js, requires-body=1, tag=电信金豆换话费
+
+
+[MITM]
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com, *.my10api.com,  *.xxjjappss.com,*.huaerdadi.com, p.du.163.com, sub.store, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, api.dushu.io, getway.radio.cn, api.vuevideo.net, www.helloshiyu.com, api.m.jd.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, wapside.189.cn
