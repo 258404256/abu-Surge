@@ -2,35 +2,6 @@
 #!desc=日常使用本地脚本
 #!system=ios
 
-[Rule]
-# YouTubeAds
-URL-REGEX,^https:\/\/.+\.googlevideo\.com\/.+&oad,REJECT
-
-URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/_get_ads,REJECT
-URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
-URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
-URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
-URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
-URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
-URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
-URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
-
-[URL Rewrite]
-# Unlock TikTok
-^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? - reject
-
-(?<=_region=)CN(?=&) JP 307
-(?<=&app_version=)1[6-9]..(?=.?.?&) 100. 307
-(?<=\?version_code=)1[6-9]..(?=.?.?&) 100. 307
-
-# YouTubeAds
-ctier=[A-Z] citer=A 302
-
 [Script]
 
 # Remove News_Article's Ad (By Liquor030) 去除今日头条广告
@@ -50,4 +21,4 @@ http-request ^https:\/\/wapside.189.cn:9001\/api\/exchange\/consume script-path=
 
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com, *.my10api.com,  *.xxjjappss.com,*.huaerdadi.com, p.du.163.com, sub.store, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, api.dushu.io, getway.radio.cn, api.vuevideo.net, www.helloshiyu.com, api.m.jd.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, wapside.189.cn
+hostname = %APPEND% *.snssdk.com, *.my10api.com,  *.xxjjappss.com,*.huaerdadi.com, p.du.163.com, sub.store, api.dushu.io, getway.radio.cn, api.vuevideo.net, www.helloshiyu.com, api.m.jd.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, wapside.189.cn
