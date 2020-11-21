@@ -1,5 +1,7 @@
 # abu-Surge
 
+收藏自用，感谢各大佬的付出！
+
 https://raw.githubusercontent.com/258404256/abu-Surge/main/surge/module/BongDong.sgmodule
 https://raw.githubusercontent.com/258404256/abu-Surge/main/surge/module/Bilibili.sgmodule
 https://raw.githubusercontent.com/258404256/abu-Surge/main/surge/module/DouYin.sgmodule
