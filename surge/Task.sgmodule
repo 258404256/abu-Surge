@@ -47,7 +47,6 @@ WPS = type=cron,cronexp=30 7 8 * * *,wake-system=1,timeout=300,script-path=https
 南方周末 = type=cron,cronexp=30 0 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/nfzm/nfzm.js,script-update-interval=0
 实时货币换算 = type=cron,cronexp=4 0 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/exchangeRate.js,script-update-interval=0
 # iepngs https://raw.githubusercontent.com/iepngs/Script/master
-携程旅行 = type=cron,cronexp=29 8 * * *,wake-system=1,timeout=130,script-path=https://raw.githubusercontent.com/iepngs/Script/master/ctrip/index.js,script-update-interval=0
 每日一言 = type=cron,cronexp=0 8 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/dompling/Script/master/oneSay/oneSay.js,script-update-interval=0
 历史上的今天 = type=cron,cronexp=0 8 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/dompling/Script/master/historyToday/index.js,script-update-interval=0
 # congcong0806   https://github.com/congcong0806/surge-list/tree/master
@@ -57,7 +56,7 @@ ymatou = type=cron,cronexp="20 4 * * *",wake-system=1,timeout=200,script-path=ht
 TestFlight公测监控 = type=cron,cronexp=0 5 * * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js,script-update-interval=0
 饿了么 = type=cron,cronexp=5 9 8 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
 # barrym-chen   https://github.com/barrym-chen/Script
-携程旅行 = type=cron,cronexp=20 9 8 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip.js,script-update-interval=0
+携程旅行 = type=cron,cronexp=20 8 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip.js,script-update-interval=0
 # MeetaGit    https://github.com/MeetaGit/MeetaRules/tree/master/Surge
 一言+历史上的今天 = type=cron,cronexp=0 8 ***,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/Calendar.js,script-update-interval=0
 # yichahucha    https://github.com/yichahucha/surge/tree/master
