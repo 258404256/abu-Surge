@@ -11,7 +11,7 @@
 东东萌宠 = type=cron,cronexp=0 8 6-18/6 * * *,wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pet.js,script-update-interval=0
 种豆得豆————凌晨时段 = type=cron,cronexp=0 8 0 * * *,wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js,script-update-interval=0
 # >>>>> 其余时段 {22,7-21/2:00}
-种豆得豆————整点时段 = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js,script-update-interval=0
+种豆得豆————整点时段 = type=cron,cronexp="0 0 22,7-21/2 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js,script-update-interval=0
 宠汪汪————每日任务喂食 = type=cron,cronexp="0 30 0 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js,script-update-interval=0
 宠汪汪————第二次喂食 = type=cron,cronexp="0 51 5 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
 宠汪汪————第三次喂食 = type=cron,cronexp="0 54 8 * * *",wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
