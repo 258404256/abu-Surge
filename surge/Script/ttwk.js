@@ -62,14 +62,14 @@ function setSignData() {
 
 function showSignInfo(timeout = 0) {
   return new Promise((resolve) => {
-    var uu = $.getdata('ttwksignurl')
+    var uu = $.getdata('ttwksignurl').replace("createSign","showSignInfo")
     setTimeout( ()=>{
       if (typeof $.getdata('ttwksignurl') === "undefined") {
         $.msg($.name,"",'请先启用获取Cookie脚本然后点击此通知！', openurl)
         return
       }
       let url = {
-        url : uu.replace("createSign","showSignInfo"),
+        url : uu,
         headers : JSON.parse($.getdata('ttwksignheader'))
       }
       $.post(url, async (err, resp, data) => {
