@@ -75,6 +75,6 @@ App价格监控 = type=cron,cronexp=30 7-22 * * *,wake-system=1,timeout=300,scri
 itHub = type=cron,cronexp=8 7 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js,script-update-interval=0
 汇率监控 = type=cron,cronexp=8 9 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js,script-update-interval=0
 彩云天气 = type=cron,cronexp=30 8-22 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js,script-update-interval=0
-
+今日头条极速版 = type=cron,cronexp=2 7-21 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/258404256/abu-qx/main/qx/Script/jrttSign.js,script-update-interval=0
 途虎养车 = type=cron,cronexp=10 0 8 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/photonmang/quantumultX/master/tuhu/tuhu.js,script-update-interval=0
 
