@@ -60,8 +60,6 @@ TestFlight公测监控 = type=cron,cronexp=0 5 * * * *,wake-system=1,timeout=200
 一言+历史上的今天 = type=cron,cronexp=0 8 ***,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/MeetaGit/MeetaRules/master/Surge/Scripting/Calendar.js,script-update-interval=0
 # yichahucha    https://github.com/yichahucha/surge/tree/master
 每日一句+蚂蚁森林收能量 = type=cron,cronexp=11 7 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/yichahucha/cron_daily.js,script-update-interval=0
-# Tartarus    https://github.com/Tartarus2014/Script
-滴滴出行 = type=cron,cronexp=3 6 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/DiDi.js,script-update-interval=0
 # vinewx  https://ooxx.be/js/
 无忧行 = type=cron,cronexp=0 6 * * *,wake-system=1,timeout=200,script-path=https://ooxx.be/js/jegotrip.js,script-update-interval=0
 # id77 https://github.com/id77/QuantumultX/tree/master
