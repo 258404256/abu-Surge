@@ -26,7 +26,6 @@ http-response http://115.28.168.103:8080/yiyan/* requires-body=1,script-path=htt
 http-response http://dbapi.ganbuguo.com/user/userinfo requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/done.js,tag=done
 http-response http:\/\/api\.591master\.com\:8081\/(1.0|3.6.8)\/ui(forum|common)\/(downloadwallpaper|getuser) requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/phoneyjgj.js,tag=手机硬件管家
 http-response https://www.mindmeister.com/api/v2/licenses/meistertask requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/meistertask.js,tag=meistertask
-http-response ^https:\/\/sports\.lifesense\.com\/sport_service\/sport\/sport\/uploadMobileStepV2 requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/lxhealth.js,tag=乐心
 http-response ^https://api.pushover.net/1/messages.json requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/pushover.js,tag=pushover
 http-response ^https:\/\/subs\.platforms\.team\/.+\/apple\/verify$ requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/productive.js,tag=PRODUCTIVE
 http-response ^https:\/\/api\.hulusaas\.com\/api\/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/hulu.js,tag=葫芦时刻
