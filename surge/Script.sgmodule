@@ -77,6 +77,7 @@ http-response https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitl
 http-response https://www.helloshiyu.com/sleep/user/profile requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/smzs.js
 # 美图秀秀 v9.0.51版本（by-黑黑酱）
 http-response ^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/258404256/abu-qx/main/qx/Script/mtxx.js
+embyPremiere.js = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/embyPremiere.js
 
 
 [MITM]
