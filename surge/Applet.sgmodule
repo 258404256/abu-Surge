@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% g.syshhc.top, c.jxjt888.top, www.laoguikeji.cn, qj.bpojie.com, b.tslt.xyz, m.xgjyouhui.com, www.freeheikeji.cn, xcx.xianbaow.com, d.smkj33.top, *.ddly666.top, hkj178.com, a.jxjt888.top, lysl2020.com, www.i3zh.com, iosoi.cn, jabi.coding.net, 
+hostname = %APPEND% g.syshhc.top, c.jxjt888.top, www.laoguikeji.cn, qj.bpojie.com, b.tslt.xyz, m.xgjyouhui.com, www.freeheikeji.cn, xcx.xianbaow.com, d.smkj33.top, *.ddly666.top, hkj178.com, a.jxjt888.top, lysl2020.com, www.i3zh.com, iosoi.cn, jabi.coding.net
 
 [Rule]
 URL-REGEX,^https:\/\/hkj178\.com\wp-json/mp/v2/advert/wechat,REJECT-TINYGIF
@@ -38,3 +38,4 @@ AppleAndroid卡片广告= type=http-response,pattern=https://iosoi.cn/wp-content
 小野分享= type=http-response,pattern=^https:\/\/lysl2020.com/wp.json/wp/v2/posts, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/apt.js,script-update-interval=0
 
 搜罗好货= type=http-response,pattern=^https:\/\/www.i3zh.com/wp.json/wp/v2/posts, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/apt.js,script-update-interval=0
+
