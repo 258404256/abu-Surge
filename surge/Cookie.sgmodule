@@ -89,7 +89,6 @@ http-request https:\/\/apapia-history\.manmanbuy\.com\/ChromeWidgetServices\/Wid
 # lxk0301 
 宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com\/mirror\/\/api\/user\/addUser\?code=\w+&, requires-body=1, max-size=0, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
 宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com\/mirror\/\/api\/user\/user\/detail\?openId=\w+&, requires-body=1, max-size=0, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js
-http-response ^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_petTreasureBox.js, requires-body=1, timeout=10, tag=聚宝盆投狗粮辅助
 http-request  https:\/\/m\.ximalaya\.com\/speed\/task-center\/account\/coin script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/backUp/xmly_speed_ccokie.js , requires-body=1, timeout=10, tag=喜马拉雅极速版Cookie
 
 # dompling 
